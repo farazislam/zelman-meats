@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://ww.w3.org/1999/xlink"
+    viewbox="0 0 500 600">
+
+  <filter id="blurMe">
+    <feGaussianBlur stdDeviation="2" />
+  </filter>
+
+
+    <path
+        id="whiteknife"
+
+        d="M100,100
+           L150,100
+           L150,190
+           L250,190
+           C260,190 150,550 105,550
+           L104,100"
+
+        style="stroke: green;
+                stroke-width: 10;
+                fill: none;
+                "
+    />
+
+    <path
+        id="redknife"
+    
+        transform="rotate(180, 350, 325)"
+
+        d="M300,100
+           L350,100
+           L350,190
+           L450,190
+           C460,190
+           350,550
+           300,550
+           L304,100"
+
+        style="stroke: #ff0000;
+               stroke-width: 10;
+               fill: none;"
+
+        filter="url(#blurMe)"
+    />
+
+</svg>

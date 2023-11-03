@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+/* UTILITY CLASSES START */
+
+.button {
+  padding: 10px 30px 10px 30px;
+  border: 2px solid #b8141c;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color 0.4s;
+}
+
+.button_secondary {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  padding: 10px 30px 10px 30px;
+}
+
+.button:hover {
+  background-color: #b8141c;
+}
+
+.button_secondary:hover {
+  background-color:#ffffff;
+  color: black;
+}
+
+/* UTILITY CLASSES END */
+
+/* NAVBAR START */
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+}
+
+.nav__left {
+  margin-left: 20px;
+  height: 70px;
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__brand {
+  height: 80px;
+  width: 130px;
+}
+
+.nav__instagram, .nav__facebook {
+  transition: all 0.3s;
+}
+
+.nav__instagram:hover, .nav__facebook:hover {
+  color: #b8141c !important;
+}
+
+.nav__right {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 340px;
+}
+
+@media (max-width: 1000px) {
+  .nav__right {
+    justify-content: right;
+  }
+
+  .nav__button {
+    display: none;
+  }
+}
+
+#hamburger {
+  height: 26px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger__top,
+.hamburger__middle,
+.hamburger__bottom {
+  background-color: white;
+  height: 1px;
+  width: 28px;
+  transition: all 0.2s;
+}
+
+.hamburger__middle {
+  transform: translateY(9px);
+}
+
+.hamburger__bottom {
+  transform: translateY(18px);
+}
+
+.open .hamburger__top {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.open .hamburger__middle {
+  display: none;
+}
+
+.open .hamburger__bottom {
+  transform: translateY(7px) rotate(-45deg);
+}
+
+/* NAVBAR END */
+
+/* HAMBURGER MENU START */
+.hidden {
+  display: none !important;
+}
+
+#hamburger_menu ul {
+  height: 450px;
+  width: 100%;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hamburger_menu li {
+  display: block;
+  height: 30px;
+}
+
+#hamburger_menu a {
+  transition: all 0.3s;
+}
+
+#hamburger_menu a:hover {
+  color: #b8141c;
+}
+
+.menu_button button {
+  height: 40px;
+  width: 180px;
+}
+
+#hamburger_menu a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* HAMBURGER MENU END */
+
+
+/* BOOKING START */
+#booking {
+  height: 97vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg_logo {
+  margin-top: auto;
+  height: auto;
+  width: 400px;
+}
+
+#whiteknife {
+  stroke: #ffffff;
+  stroke-width: 10;
+  fill: none;
+  filter: drop-shadow(white 0px 0px 20px);
+  animation: flicker 3s linear infinite;
+}
+
+#redknife {
+  stroke: #de0001;
+  stroke-width: 10;
+  fill: none;
+  filter: drop-shadow(#de0001 0px 0px 20px);
+  animation: flicker 3s linear infinite;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: .45;
+  }
+
+  6% {
+    opacity: .85;
+  }
+
+  8% {
+    opacity: .35;
+  }
+
+  10% {
+    opacity: .90;
+  }
+
+  11% {
+    opacity: .7;
+  }
+
+  12% {
+    opacity: .9;
+  }
+
+  14% {
+    opacity: .95;
+  }
+
+  16% {
+    opacity: .3;
+  }
+
+  17% {
+    opacity: .9;
+  }
+
+  19% {
+    opacity: .93;
+  }
+
+  20% {
+    opacity: .99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: .4;
+  }
+
+  28% {
+    opacity: .98;
+  }
+
+  37% {
+    opacity: .93;
+  }
+
+  38% {
+    opacity: .5;
+  }
+
+  39% {
+    opacity: .96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: .4;
+  }
+
+  46% {
+    opacity: .94;
+  }
+
+  56% {
+    opacity: .9;
+  }
+
+  58% {
+    opacity: .4;
+  }
+
+  60% {
+    opacity: .99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: .4;
+  }
+
+  72% {
+    opacity: .3;
+  }
+
+  93% {
+    opacity: .93;
+  }
+
+  95% {
+    opacity: .6;
+  }
+
+  97% {
+    opacity: .93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.button-booking {
+  margin-top: 20px;
+  /* width: 270px; */
+}
+
+.svg_chevron {
+  margin-top: auto;
+  height: 15px;
+  width: 20px;
+}
+
+#chevron {
+  stroke: white;
+  stroke-width: 18px;
+}
+
+/* BOOKING END*/
+
+/* MENU START */
+#menu {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_title {
+  color: white;
+  font-family: 'Londrina Outline', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu__steak {
+  margin-top: 50px;
+  width: 100vw;
+}
+
+.menu__food, .menu__drink {
+  height: 320px;
+  width: 500px;
+  margin-bottom: 30px;
+  background-color: #b22631;
+  color: white;
+  font-family: 'Lora', serif;
+  text-align: center;
+}
+
+.menu h2 {
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.menu p {
+  margin: 0px 30px 30px 30px;
+  line-height: 20px;
+}
+
+.menu button {
+  margin-top: 10px;
+}
+
+.menu__drink {
+  height: 220px;
+}
+
+@media (min-width: 800px) {
+  .menu__food {
+    background-color: green;
+  }
+  
+  .menu__drink {
+    background-color: green;
+  }
+}
+
+/* MENU END */
+
+/* ABOUT START */
+.about {
+  margin-left: 40px;
+}
+
+.about_image {
+  width: 500px;
+}
+
+.about h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.8rem;
+}
+
+.about p {
+  color: #ffffff;
+  font-family: 'Lora', serif;
+  line-height: 27px;
+  text-align: left;
+  letter-spacing: 0.3;
+  width: 450px;
+}
+
+.about button {
+  margin-top: 20px;
+}
+
+/* ABOUT END */
