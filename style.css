@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -177,7 +178,7 @@ body {
 /* BOOKING START */
 #booking {
   height: 98vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,6 +189,7 @@ body {
   margin-top: auto;
   height: auto;
   width: 250px;
+  border: 1px solid yellow;
 }
 
 #whiteknife {
