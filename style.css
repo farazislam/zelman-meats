@@ -364,7 +364,7 @@ body {
   justify-content: center;
 }
 
-.menu_title {
+.menu__h1 {
   width: 250px;
   color: white;
   font-family: 'Londrina Outline', sans-serif;
@@ -375,7 +375,7 @@ body {
   line-height: 40px;
 }
 
-.menu__steak {
+.menu__img {
   margin-top: 50px;
   height: 230px;
   width: 100vw;
@@ -436,7 +436,7 @@ body {
   justify-content: center;
 }
 
-.about_image {
+.about__image {
   width: 400px;
 }
 
@@ -472,13 +472,58 @@ body {
   justify-content: center;
 }
 
-.social h2 {
+.social__h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.7rem;
+}
+
+.social__image {
+  margin-top: 40px;
+  display: grid;
+}
+
+.social__image {
+  width: 380px;
+}
+
+
+
+/* SOCIAL END*/
+
+/* PARTIES START*/
+.parties {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.parties__h2 {
   color: #ffffff;
   text-transform: uppercase;
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.8rem;
 }
 
+.parties__p {
+  margin-top: 20px;
+  color: #ffffff;
+  font-family: 'Lora', serif;
+  line-height: 27px;
+  letter-spacing: 0.3;
+  width: 350px;
+}
 
+.parties__button {
+  margin-top: 30px;
+}
 
-/* SOCIAL END*/
+.parties_img {
+  width: 380px;
+  margin-top: 40px;
+}
+
+/* PARTIES END*/
