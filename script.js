@@ -5,6 +5,7 @@ const menu = document.getElementById('menu')
 const about = document.getElementById('about')
 const social = document.getElementById('social')
 const parties = document.getElementById('parties')
+const signup = document.getElementById('signup')
 
 function navToggle() {
     hamburger.classList.toggle('open');
@@ -14,6 +15,7 @@ function navToggle() {
     about.classList.toggle('hidden')
     social.classList.toggle('hidden')
     parties.classList.toggle('hidden')
+    signup.classList.toggle('hidden')
 }
 
 hamburger.addEventListener('click', navToggle);
