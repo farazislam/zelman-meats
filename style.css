@@ -56,7 +56,6 @@ body {
 .nav {
   position: fixed;
   width: 100vw;
-  max-width: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,7 +91,6 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  width: 40px;
   margin-right: 15px;
 }
 
@@ -422,16 +420,6 @@ body {
   margin-top: 10px;
 }
 
-@media (min-width: 800px) {
-  .menu__food {
-    background-color: green;
-  }
-  
-  .menu__drink {
-    background-color: green;
-  }
-}
-
 /* MENU END */
 
 /* ABOUT START */
@@ -605,3 +593,26 @@ body {
 
 
 /* SIGNUP END*/
+
+/* CONTACT */
+.contact {
+  margin-top: 50px;
+}
+
+#map {
+  width: 90vw;
+  max-width: 500px;
+  height: 350px;
+  margin: auto;
+}
+
+.maplogo {
+  height: 40px;
+  width: 40px
+}
+
+
+
+
+
+/* CONTACT END */

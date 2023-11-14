@@ -1,0 +1,18 @@
+<svg version="1.1" viewbox="0 0 350 460" xmlns="http://www.w3.org/2000/svg">
+
+    <path id="whiteknife" transform="translate(0, 5)" stroke="white" stroke-width="16"  fill="none" d="M0,0
+        L50,0
+        L50,90
+        L150,90
+        C160,90 50,450 5,450
+        L4, 0" />
+
+    <path id="redknife" transform="translate(-3, 5) rotate(180, 275, 225)" stroke="red" stroke-width="16"  fill="none" d="M200,0
+        L250,0
+        L250,90
+        L350,90
+        C360,90
+        250,450
+        200,450
+        L204,0" />
+</svg>
