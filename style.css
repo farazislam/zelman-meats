@@ -583,8 +583,18 @@ body {
   right: 0;
 }
 
-.signup__form input {
+.inputfield {
   margin-bottom: 25px;
+  height: 120px;
+  outline: none;
+  padding-left: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.2s;
+}
+
+.inputfield:focus {
+  background-color: #1d1d1d;
 }
 
 .signup__form button {
