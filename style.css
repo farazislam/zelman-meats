@@ -668,8 +668,84 @@ body {
 .contact__telephone, .contact__email {
   color: #b22631;
   margin-top: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
-
-
 /* CONTACT END */
+
+/* FOOTER START */
+.footer {
+  margin-top: 200px;
+}
+
+.footer__nav {
+  background-color: #1d1d1d;
+  height: 450px;
+  padding-top: 20px;
+}
+
+.footer__left {
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__brand {
+  height: 50px;
+}
+
+.footer__break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.footer .fa-instagram {
+  margin-right: 20px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer__menu li {
+  list-style-type: none;
+}
+
+.footer__menu a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  line-height: 30px;
+  transition: all 0.2s;
+}
+
+.footer__menu a:hover {
+  color:#de0001;
+}
+
+.footer__copyright {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__copyright p {
+  color: #ffffff;
+  font-size: 12px;
+  height: 15px;
+  width: 350px;
+  background-color: #b22631;
+}
+
+/* FOOTER END */
