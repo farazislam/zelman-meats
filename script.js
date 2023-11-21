@@ -7,6 +7,7 @@ const social = document.getElementById('social')
 const parties = document.getElementById('parties')
 const signup = document.getElementById('signup')
 const contact = document.getElementById('contact')
+const footer = document.getElementById('footer')
 
 function navToggle() {
     hamburger.classList.toggle('open');
@@ -18,6 +19,7 @@ function navToggle() {
     parties.classList.toggle('hidden')
     signup.classList.toggle('hidden')
     contact.classList.toggle('hidden')
+    footer.classList.toggle('hidden')
 }
 
 hamburger.addEventListener('click', navToggle);
