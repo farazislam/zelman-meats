@@ -686,7 +686,7 @@ body {
 }
 
 .footer__left {
-  height: 90px;
+  height: 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -702,8 +702,8 @@ body {
   height: 0;
 }
 
-.footer .fa-instagram {
-  margin-right: 20px;
+.footer__left__socialmedia {
+  transform: scale(0.6);
 }
 
 .footer__menu {
@@ -745,7 +745,7 @@ body {
   font-size: 12px;
   height: 15px;
   width: 350px;
-  background-color: #b22631;
+  background-color: #b22531;
 }
 
 /* FOOTER END */
