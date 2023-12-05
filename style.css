@@ -232,6 +232,13 @@ body {
   width: 250px;
 }
 
+@media (min-width: 768px) {
+  .svg_logo {
+    margin-top: 150px;
+    width: 350px;
+  }
+}
+
 #whiteknife {
   stroke: #ffffff;
   stroke-width: 10;
