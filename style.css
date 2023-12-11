@@ -632,22 +632,46 @@ body {
   font-size: 1.7rem;
 }
 
-.social__image {
-  margin-top: 40px;
+.social__images {
   display: grid;
 }
 
 .social__image {
+  margin-top: 40px;
+  height: auto;
   width: 380px;
 }
 
+@media (min-width: 800px) {
+  .social__images {
+    grid-template-columns: 400px 400px;
+  }
+
+  .social__images a {
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social__images {
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .social__images {
+    grid-template-columns: 400px 400px 400px 400px;
+    column-gap: 30px;
+  }
+}
 
 
 /* SOCIAL END*/
 
 /* PARTIES START*/
 .parties {
-  margin-top: 20px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
