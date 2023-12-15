@@ -853,16 +853,17 @@ body {
 
 /* CONTACT */
 .contact {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 20px;
+  display: grid;
+  justify-content: start;
+  width: 515px;
 }
 
 #map {
   width: 90vw;
-  max-width: 500px;
+  max-width: 510px;
   height: 350px;
-  margin: auto;
 }
 
 .maplogo {
@@ -872,7 +873,6 @@ body {
 
 .contact__details {
   margin-top: 30px;
-  margin-left: 20px;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -892,7 +892,8 @@ body {
 }
 
 .contact__p {
-  width: 380px;
+  width: 90vw;
+  max-width: 510px;
   color: #ffffff;
   font-family: 'Courier New', Courier, monospace;
   line-height: 20px;
@@ -914,6 +915,53 @@ body {
   margin-top: 30px;
   text-decoration: none;
   font-size: 1.1rem;
+}
+
+@media (min-width: 540px) {
+  .contact {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    width: 700px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  #map {
+    width: 330px;
+  }
+
+  .contact__details {
+    margin-top: 0;
+  }
+
+  .contact__p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    width: 900px;
+  }
+
+  #map {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    width: 1100px;
+  }
+
+  #map {
+    width: 550px;
+  }
 }
 
 /* CONTACT END */
