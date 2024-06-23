@@ -8,6 +8,11 @@ const parties = document.getElementById('parties')
 const signup = document.getElementById('signup')
 const contact = document.getElementById('contact')
 const footer = document.getElementById('footer')
+const foodMenuNavCollection = document.getElementsByClassName('food-menu-tab')
+const menuCollection = document.getElementsByClassName('menu-content')
+
+// Hamburger functionality
+hamburger.addEventListener('click', navToggle);
 
 function navToggle() {
     hamburger.classList.toggle('open');
@@ -22,8 +27,7 @@ function navToggle() {
     footer.classList.toggle('hidden')
 }
 
-hamburger.addEventListener('click', navToggle);
-
+// Google Map functionality
 async function initMap() {
     const { Map } = await google.maps.importLibrary("maps");
     const position = {lat: 51.50172, lng: -0.15939}
@@ -42,3 +46,34 @@ async function initMap() {
 }
 
 initMap();
+
+// MENU PAGE
+
+// Add click event listeners to each menu element
+Array.from(foodMenuNavCollection).forEach(menuitem => {
+    menuitem.addEventListener('click', function() {
+        // Remove active class from all
+        removeAllActive()
+        // Then add active class to the one which has been clicked
+        menuitem.classList.add('active')
+        changeMenu(menuitem.dataset.menuindex)
+    })
+})
+
+function removeAllActive() {
+    Array.from(foodMenuNavCollection).forEach(menuitem => {
+        menuitem.classList.remove('active')
+    })
+}
+
+function changeMenu(index) {
+    Array.from(menuCollection).forEach(menu => {
+        if(menu.dataset.menuindex === index) {
+            menu.classList.add('menu-active')
+            menu.classList.remove('menu-inactive')
+        } else {
+            menu.classList.add('menu-inactive')
+            menu.classList.remove('menu-active')
+        }
+    })
+}

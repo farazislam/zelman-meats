@@ -1,0 +1,538 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;600;700&family=Londrina+Outline&family=Lora:wght@500&family=Montserrat:wght@500;700&family=Mulish&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;600;700&family=Londrina+Outline&family=Montserrat:wght@500;700&family=Mulish&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <title>Zelman Meats</title>
+    <script src="https://kit.fontawesome.com/899c5adb56.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <picture class="nav__left">
+                <a href="./index.html"><img class=nav__brand src="images/logo.svg" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/zelman_meats/"><i
+                        class="fa-brands fa-instagram fa-xl nav__instagram" style="color: #ffffff;"></i></a>
+                <a target="_blank" href="https://en-gb.facebook.com/ZMEATS/"><i
+                        class="fa-brands fa-facebook-f fa-xl nav__facebook" style="color: #ffffff;"></i></a>
+            </picture>
+            <div class="nav__right">
+                <a href="./booking.html"><button class="nav__button button">Book Now</button></a>
+                <div id="hamburger">
+                    <div class="hamburger__top"></div>
+                    <div class="hamburger__middle"></div>
+                    <div class="hamburger__bottom"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hamburger_menu" class="hamburger_menu hidden">
+            <ul>
+                <li><a href="">Find Us</a></li>
+                <li><a href="" class="primaryColorText">Menu</a></li>
+                <li><a href="">Join The Tribe</a></li>
+                <li><a href="">About Zelman Meats</a></li>
+                <li><a href="">Know Your Meat</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Get In Touch</a></li>
+                <li class="menu_button"><a href="booking.html"><button class="button">Book Now</button></a></li>
+                <li class="menu_button"><button class="button">Follow Us</button></li>
+            </ul>
+        </section>
+
+        <section id="menu" class="menu">
+            <h1 class="menu__h1">Zelman Meats Restaurant in Knightsbridge</h1>
+            <div class="menu__buttons">
+                <div class="button button_secondary">DRINKS MENU</div>
+                <div class="button button_secondary">BOOK NOW</div>
+            </div>
+        </section>
+
+        <nav class="food-menu-nav">
+            <ul>
+                <li class="food-menu-tab active" data-menuIndex="1">A La Carte</li>
+                <li class="food-menu-tab" data-menuIndex="2">Cocktails</li>
+                <li class="food-menu-tab" data-menuIndex="3">Dessert</li>
+                <li class="food-menu-tab" data-menuIndex="4">Wine</li>
+                <li class="food-menu-tab" data-menuIndex="5">Beers</li>
+                <li class="food-menu-tab" data-menuIndex="6">Milkshakes</li>
+            </ul>
+        </nav>
+
+        <section id="menus">
+            <!-- FOOD -->
+            <!-- STARTERS -->
+            <div id="menu-content-food" class="menu-content menu-grid-layout menu-active" data-menuIndex="1">
+                <h1 class="foodH1">Starters</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Hummus & Short Rib</h1>
+                    <p class="foodDescription">harissa dressing, crispy chickpeas & grilled flatbread.</p>
+                    <p class="foodPrice">£18.5</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Tiger Prawn Tempura</h1>
+                    <p class="foodDescription">siracha mayo, chilli, spring onion</p>
+                    <p class="foodPrice">£10.5</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Seared Scallop</h1>
+                    <p class="foodDescription">In the shell, smoked paprika, chipotle and lime butter</p>
+                    <p class="foodPrice">£11</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Halloumi</h1>
+                    <p class="foodDescription">grilled, honey harissa, chickpeas, mint</p>
+                    <p class="foodPrice">£11</p>
+                </div>
+                <!-- MAINS -->
+                <h1 class="foodH1">Mains</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Zelman Wagyu Burger</h1>
+                    <p class="foodDescription">180g Wagyu patty, sriracha burger sauce, cheddar, crispy onions, pickles
+                        &
+                        triple cooked chips</p>
+                    <p class="foodPrice">£24.50</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Double Zelman Wagyu Burger</h1>
+                    <p class="foodDescription">Double 180g, Wagyu patty, sriracha burger sauce, cheddar, crispy onions,
+                        pickles & triple cooked chips</p>
+                    <p class="foodPrice">£34.5</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Cod</h1>
+                    <p class="foodDescription">Cod loin, saffron yoghurt, grilled courgetes, peas, mint & almond quinoa
+                    </p>
+                    <p class="foodPrice">£25</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Caesar Salad</h1>
+                    <p class="foodDescription">Grilled chicken breast, romaine lettuce, spicy Caesar dressing, sourdough
+                        croutons, parmesan</p>
+                    <p class="foodPrice">£25</p>
+                </div>
+                <!-- THE CUTS -->
+                <h1 class="foodH1">The Cuts</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">The Zelman Plate</h1>
+                    <p class="foodDescription"><span class="foodDescription-uppercase">Every cut on one plate to share.
+                        </span>Ribeye, Picanha, Fillet, Striploin / 350g per person with a choice of side each*Truffle
+                        Chips
+                        supp +£3</p>
+                    <p class="foodPrice">£53 per person (minimum 2 people)</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Fillet</h1>
+                    <p class="foodDescription">Grain finished Angus Aberdeen Black from Canada</p>
+                    <p class="foodPrice">250g £52</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Striploin</h1>
+                    <p class="foodDescription">Grain finished Hereford & Angus Aberdeen Black from Australia</p>
+                    <p class="foodPrice">350g £40</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Ribeye</h1>
+                    <p class="foodDescription">Grain finished Angus Aberdeen Black from Australia</p>
+                    <p class="foodPrice">350g £49</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Picanha</h1>
+                    <p class="foodDescription">Grass fed Angus Aberdeen Black from Australia</p>
+                    <p class="foodPrice">300g £35</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">F1 Wagyu Ribeye</h1>
+                    <p class="foodDescription">Grade 8-9+ Grains finished Wagyu cattle crossed with Black Angus from
+                        Australia</p>
+                    <p class="foodPrice">300g £117</p>
+                </div>
+                <!-- BIG CUTS -->
+                <div class="foodH1-container">
+                    <h1 class="foodH1">Big Cuts</h1>
+                    <p class="foodH1-caption">Different sizes available. Ask for availability</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Ribeye on the Bone From UK</h1>
+                    <p class="foodDescription">35 day dry-ages, N Yorkshire, grain finished</p>
+                    <p class="foodPrice">£11 / 100g</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Porterhouse from UK</h1>
+                    <p class="foodDescription">35 day dry-ages, N Yorkshire, grain finished</p>
+                    <p class="foodPrice">£11 / 100g</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Short Ribs from Australia</h1>
+                    <p class="foodDescription">Slow cooked, with barbecue sauce</p>
+                    <p class="foodPrice">£11.5 / 100g</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">John Stone Ribeye from Ireland</h1>
+                    <p class="foodDescription">Angus & Hereford, County MEath, Grass fed</p>
+                    <p class="foodPrice">£14 / 100g</p>
+                </div>
+                <!-- SAUCES -->
+                <h1 class="foodH1">Sauces</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Sriracha Mayo</h1>
+                    <p class="foodPrice">£2</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Chimichurri</h1>
+                    <p class="foodPrice">£2</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">BBQ</h1>
+                    <p class="foodPrice">£3</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Peppercorn</h1>
+                    <p class="foodPrice">£3</p>
+                </div>
+                <!-- SIDES -->
+                <h1 class="foodH1">Sides</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Black Truffle and Parmesan Chips</h1>
+                    <p class="foodPrice">£9.5</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Triple Cooked Chips</h1>
+                    <p class="foodPrice">£6</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Portobello Mushrooms</h1>
+                    <p class="foodDescription">herb butter, breadcrumbs pickled red onions</p>
+                    <p class="foodPrice">£6.5</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Super Food Salad</h1>
+                    <p class="foodDescription">cucumber, beetroot, romano peppers, broccoli, tomato, topped with egg</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Charred Sweet Potato</h1>
+                    <p class="foodDescription">Feta cheese, caramelised onions, chilli</p>
+                    <p class="foodPrice">£8.5</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Cauliflower</h1>
+                    <p class="foodDescription">Whipped tahini, chilli, pomegranate seeds</p>
+                    <p class="foodPrice">£8.5</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Green Beans</h1>
+                    <p class="foodDescription">Lemon and garlic butter</p>
+                    <p class="foodPrice">£6.5</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Creamed Spinach</h1>
+                    <p class="foodDescription">creamed, Gruyere cheese</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+            </div>
+
+            <div id="menu-content-cocktails" class="menu-content menu-grid-layout menu-inactive" data-menuIndex="2">
+                <h1 class="foodH1">Cocktails</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Mango and Raspberry Lemonade</h1>
+                    <p class="foodDescription">Mango, Raspberry, Lemon, Fever Tree Lemonade, Sparkling water</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Spiced Apple Hit</h1>
+                    <p class="foodDescription">Apple Juice, Spiced Apple Syrup, Fever Tree, Ginger Beer</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Rosmery Power</h1>
+                    <p class="foodDescription">Cranberry, Lemon, Rosemery Syrup, Apple</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Virgin Mojito</h1>
+                    <p class="foodDescription">(Classic, Strawberry, Mango, Blueberry or PAssion fruit) Mint, Fruit puree, Sparkling Water, Lime</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Dream Catcher</h1>
+                    <p class="foodDescription">Mango, Fever Tree Lemonade, Cranberry, Lime</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Clean Mary</h1>
+                    <p class="foodDescription">Tomato, Worcester Sauce, Tabasco, Lemon, Salt, Black Pepper, Celery</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Applie Pie Fizz</h1>
+                    <p class="foodDescription">Apple, Cinammon, Syrup, Double Cream, Appletizer</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Virgin Porn Star Martini</h1>
+                    <p class="foodDescription">Passion Fruit, Apple, Fever Tree Soda, Elderflower Cordial</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+            </div>
+
+            <div id="menu-content-dessert" class="menu-content menu-grid-layout menu-inactive" data-menuIndex="3">
+                <h1 class="foodH1">Dessert</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Chocolate Sundae</h1>
+                    <p class="foodDescription">Brownie pieces with whipped cream and vanilla ice-cream</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Lamington Cake</h1>
+                    <p class="foodDescription">Coconut layered sponge with homemade jam, clotted cream</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Affogato</h1>
+                    <p class="foodDescription">Vanilla ice-cream and Dounle Espresso</p>
+                    <p class="foodPrice">£6</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Vanilla Milkshake</h1>
+                    <p class="foodDescription">Vanilla ice-cream, milk, whipped cream, sprinkles</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Stawberry Milkshake</h1>
+                    <p class="foodDescription">Vanilla ice-cream, milk, stawberry syrup, whipped cream, strawberry</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Chocolate Milkshake</h1>
+                    <p class="foodDescription">Vanilla ice-cream, milk, chocolate sauce, whipped cream, chocolate buttons</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+            </div>
+
+            <div id="menu-content-wine" class="menu-content menu-grid-layout menu-inactive" data-menuIndex="4">
+                <h1 class="foodH1">Wine</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Mango and Raspberry Lemonade</h1>
+                    <p class="foodDescription">Mango, Raspberry, Lemon, Fever Tree Lemonade, Sparkling water</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Spiced Apple Hit</h1>
+                    <p class="foodDescription">Apple Juice, Spiced Apple Syrup, Fever Tree, Ginger Beer</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Rosmery Power</h1>
+                    <p class="foodDescription">Cranberry, Lemon, Rosemery Syrup, Apple</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Virgin Mojito</h1>
+                    <p class="foodDescription">(Classic, Strawberry, Mango, Blueberry or PAssion fruit) Mint, Fruit puree, Sparkling Water, Lime</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Dream Catcher</h1>
+                    <p class="foodDescription">Mango, Fever Tree Lemonade, Cranberry, Lime</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Clean Mary</h1>
+                    <p class="foodDescription">Tomato, Worcester Sauce, Tabasco, Lemon, Salt, Black Pepper, Celery</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Applie Pie Fizz</h1>
+                    <p class="foodDescription">Apple, Cinammon, Syrup, Double Cream, Appletizer</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Virgin Porn Star Martini</h1>
+                    <p class="foodDescription">Passion Fruit, Apple, Fever Tree Soda, Elderflower Cordial</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+            </div>
+
+            <div id="menu-content-beer" class="menu-content menu-grid-layout menu-inactive" data-menuIndex="5">
+                <h1 class="foodH1">Beer</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Mango and Raspberry Lemonade</h1>
+                    <p class="foodDescription">Mango, Raspberry, Lemon, Fever Tree Lemonade, Sparkling water</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Spiced Apple Hit</h1>
+                    <p class="foodDescription">Apple Juice, Spiced Apple Syrup, Fever Tree, Ginger Beer</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Rosmery Power</h1>
+                    <p class="foodDescription">Cranberry, Lemon, Rosemery Syrup, Apple</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Virgin Mojito</h1>
+                    <p class="foodDescription">(Classic, Strawberry, Mango, Blueberry or PAssion fruit) Mint, Fruit puree, Sparkling Water, Lime</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Dream Catcher</h1>
+                    <p class="foodDescription">Mango, Fever Tree Lemonade, Cranberry, Lime</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Clean Mary</h1>
+                    <p class="foodDescription">Tomato, Worcester Sauce, Tabasco, Lemon, Salt, Black Pepper, Celery</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Applie Pie Fizz</h1>
+                    <p class="foodDescription">Apple, Cinammon, Syrup, Double Cream, Appletizer</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Virgin Porn Star Martini</h1>
+                    <p class="foodDescription">Passion Fruit, Apple, Fever Tree Soda, Elderflower Cordial</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+            </div>
+
+            <div id="menu-content-milkshake" class="menu-content menu-grid-layout menu-inactive" data-menuIndex="6">
+                <h1 class="foodH1">Milkshake</h1>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Mango and Raspberry Lemonade</h1>
+                    <p class="foodDescription">Mango, Raspberry, Lemon, Fever Tree Lemonade, Sparkling water</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Spiced Apple Hit</h1>
+                    <p class="foodDescription">Apple Juice, Spiced Apple Syrup, Fever Tree, Ginger Beer</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Rosmery Power</h1>
+                    <p class="foodDescription">Cranberry, Lemon, Rosemery Syrup, Apple</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Virgin Mojito</h1>
+                    <p class="foodDescription">(Classic, Strawberry, Mango, Blueberry or PAssion fruit) Mint, Fruit puree, Sparkling Water, Lime</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Dream Catcher</h1>
+                    <p class="foodDescription">Mango, Fever Tree Lemonade, Cranberry, Lime</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Clean Mary</h1>
+                    <p class="foodDescription">Tomato, Worcester Sauce, Tabasco, Lemon, Salt, Black Pepper, Celery</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Applie Pie Fizz</h1>
+                    <p class="foodDescription">Apple, Cinammon, Syrup, Double Cream, Appletizer</p>
+                    <p class="foodPrice">£7</p>
+                </div>
+                <div class="foodItem">
+                    <h1 class="foodTitle">Virgin Porn Star Martini</h1>
+                    <p class="foodDescription">Passion Fruit, Apple, Fever Tree Soda, Elderflower Cordial</p>
+                    <p class="foodPrice">£8</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="button-container">
+            <a href="./booking.html"><button class="button">Book A Table</button></a>
+        </div>
+
+        <section id="social" class="social">
+            <h2 class="social__h2">Stay Social @Zelman_Meats</h2>
+            <div class="social__images">
+                <a target="_blank" href="https://www.instagram.com/p/C0o43VHNcPH/">
+                    <picture><img class="social__image" src="images/social_img1.jpeg" alt="" /></picture>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/p/C0jvRxjtgnk/">
+                    <picture><img class="social__image" src="images/social_img2.jpeg" alt="" /></picture>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/p/C0bU-dZsRV7/">
+                    <picture><img class="social__image" src="images/social_img3.jpeg" alt="" /></picture>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/p/C0hKf7INx8b/">
+                    <picture><img class="social__image" src="images/social_img4.jpeg" alt="" /></picture>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/p/C0YwKrbO6Er/">
+                    <picture><img class="social__image" src="images/social_img5.jpeg" alt="" /></picture>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/p/C0TmmRnghzb/">
+                    <picture><img class="social__image" src="images/social_img6.jpeg" alt="" /></picture>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/p/C0L4NXtst_9/">
+                    <picture><img class="social__image" src="images/social_img7.jpeg" alt="" /></picture>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/p/C0RBz5HsxQA/">
+                    <picture><img class="social__image" src="images/social_img8.jpeg" alt="" /></picture>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <nav class="footer__nav">
+            <div class="footer__first">
+                <img class="footer__brand" src="images/logo.svg" alt="">
+                <div class="footer__break"></div>
+
+                <div class="footer__socialmedia">
+                    <a target="_blank" href="https://www.instagram.com/zelman_meats/">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa-solid fa-circle fa-stack-2x" style="color: #b32635;"></i>
+                            <i class="fa-brands fa-instagram fa-stack-1x" style="color: #ffffff;"></i>
+                        </span>
+                    </a>
+                    <a target="_blank" href="https://en-gb.facebook.com/ZMEATS/">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa-solid fa-circle fa-stack-2x" style="color: #b32635;"></i>
+                            <i class="fa-brands fa-facebook-f fa-stack-1x" style="color: #ffffff;"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__second">
+                <ul class="footer__menu">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">Get In Touch</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Staff Policy</a></li>
+                    <li><a href="">London</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="footer__copyright">
+            <p>© COPYRIGHT 2023 ZELMAN MEATS. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZT30B0ys_AcGmZbJOmm8OrDupJuK2IFs&callback=initMap"></script>
+</body>
+
+</html>

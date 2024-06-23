@@ -20,7 +20,6 @@ body {
 }
 
 /* UTILITY CLASSES START */
-
 .button {
   padding: 10px 30px 10px 30px;
   border: 2px solid #b8141c;
@@ -31,6 +30,7 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: background-color 0.4s;
+  cursor: pointer;
 }
 
 .button_secondary {
@@ -53,6 +53,11 @@ body {
   height: 50px;
   background-color: #000000;
   border: 2px solid #b8141c;
+}
+
+/* Not sure if this is good practice */
+.primaryColorText {
+    color: #b8141c !important;
 }
 
 /* UTILITY CLASSES END */
@@ -215,7 +220,6 @@ body {
 
 /* HAMBURGER MENU END */
 
-
 /* BOOKING START */
 #booking {
   height: 98vh;
@@ -234,7 +238,7 @@ body {
 
 @media (min-width: 768px) {
   .svg_logo {
-    margin-top: 150px;
+    margin-top: 300px;
     width: 350px;
   }
 }
@@ -907,6 +911,7 @@ body {
 }
 
 .address {
+  margin-top: 30px;
   width: 230px;
 }
 
@@ -1070,6 +1075,14 @@ body {
   .footer__menu li {
     margin-right: 30px;
   }
+
+  .footer__copyright {
+    justify-content: right;
+  }
+
+  .footer__copyright p {
+    margin-right: 100px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1103,3 +1116,86 @@ body {
   }
 }
 /* FOOTER END */
+
+/* BOOKINGPAGE START */
+.booking + footer {
+  margin-top: 60px;
+}
+
+.bookingpage {
+  margin-top: 100px;
+  width: 100%;
+  height: 550px;
+  background-image: url("images/booking.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.bookingpage::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: black;
+  opacity: 0.3;
+}
+
+.bookingpage__h2 {
+  width: 250px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.bookingpage__buttons {
+  width: 500px;
+  display: grid;
+  justify-items: center;
+}
+
+.bookingpage__buttons button {
+  background-color: transparent;
+  max-width: fit-content;
+  margin-top: 20px;
+}
+
+@media (min-width: 770px) {
+  .bookingpage__h2 {
+    width: 500px;
+    font-size: 3rem;
+  }
+
+  .bookingpage__buttons {
+    grid: auto-flow / 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bookingpage {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bookingpage {
+    height: 700px;
+  }
+
+  .bookingpage__h2 {
+    width: 1000px;
+  }
+}
+
+
+
+
+/* BOOKINGPAGE END */
