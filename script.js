@@ -10,21 +10,30 @@ const contact = document.getElementById('contact')
 const footer = document.getElementById('footer')
 const foodMenuNavCollection = document.getElementsByClassName('food-menu-tab')
 const menuCollection = document.getElementsByClassName('menu-content')
+const bookingPage = document.getElementById('bookingpage')
+const foodMenuNav = document.getElementById('food-menu-nav')
+const menus = document.getElementById('menus')
+const buttonContainer = document.getElementById('button-container')
+
 
 // Hamburger functionality
 hamburger.addEventListener('click', navToggle);
 
 function navToggle() {
-    hamburger.classList.toggle('open');
+    hamburger.classList.toggle('open')
     hamburgerMenu.classList.toggle('hidden')
-    booking.classList.toggle('hidden')
-    menu.classList.toggle('hidden')
-    about.classList.toggle('hidden')
-    social.classList.toggle('hidden')
-    parties.classList.toggle('hidden')
-    signup.classList.toggle('hidden')
-    contact.classList.toggle('hidden')
-    footer.classList.toggle('hidden')
+    booking!==null && booking.classList.toggle('hidden')
+    menu!==null && menu.classList.toggle('hidden')
+    menus!==null && menus.classList.toggle('hidden')
+    foodMenuNav!==null && foodMenuNav.classList.toggle('hidden')
+    buttonContainer!==null && buttonContainer.classList.toggle('hidden')
+    about!==null && about.classList.toggle('hidden')
+    social!==null && social.classList.toggle('hidden')
+    parties!==null && parties.classList.toggle('hidden')
+    signup!==null && signup.classList.toggle('hidden')
+    contact!==null && contact.classList.toggle('hidden')
+    footer!==null && footer.classList.toggle('hidden')
+    bookingpage!==null && bookingpage.classList.toggle('hidden')
 }
 
 // Google Map functionality
